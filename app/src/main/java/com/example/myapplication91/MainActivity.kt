@@ -2,12 +2,10 @@ package com.example.myapplication91
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.EditText
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 
 class MainActivity : AppCompatActivity() {
@@ -24,18 +22,11 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                intent.putExtra("result",editText_1.text.toString() + editText_2.text.toString())
+                intent.putExtra("result", editText_1.text.toString() + editText_2.text.toString())
                 startActivity(intent)
             }
         })
 
-        /*
-     fun onClick(view: View?) {
-            val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("result",editText_1.text.toString() + editText_2.text.toString())
-            startActivity(intent)
-        }
-         */
     }
 
 }
