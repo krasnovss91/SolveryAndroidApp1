@@ -12,10 +12,11 @@ class SecondActivity : AppCompatActivity() {
         val arguments = intent.extras
         val data = arguments?.get("result").toString()
 
-        val textView = TextView(this)
-        textView.textSize = 20f
-        textView.setPadding(16, 16, 16, 16)
+       // val textView = TextView(this)
+        val textView = findViewById<TextView>(R.id.textView)
+            // textView.textSize = 20f
+      //  textView.setPadding(16, 16, 16, 16)
         textView.text = data
-        setContentView(textView)
+       // setContentView(textView)
     }
 }
